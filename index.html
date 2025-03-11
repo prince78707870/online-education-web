@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <!-- Style Link -->
+     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Style CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fa Fa-icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animation CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD +Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <div class="container-fluid bg-dark fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+          <a href="" class="navbar-brand">
+            <img src="Assets/Images/logo.png" alt="Logo">
+          </a>
+          <div id="nav-icons" class="text-white d-lg-none">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart ps-2"></i>
+            <i class="fas fa-user ps-2"></i>
+          </div>
+          <button type="button" class="btn text-white ml-auto navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse ms-md-5" id="navbar-menu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-white active" id="menu">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="" class="nav-link text-white-50 drop dropdown-toggle" data-bs-toggle="dropdown" id="menu">Courses</a>
+                <div class="dropdown-menu bg-dark p-0" id="dropdown-list">
+                  <a href="#" class="dropdown-item text-white-50">Course 1</a>
+                  <a href="#" class="dropdown-item text-white-50">Course 2</a>
+                  <a href="#" class="dropdown-item text-white-50">Course 3</a>
+                  <a href="#" class="dropdown-item text-white-50">Course 4</a>
+                  <a href="#" class="dropdown-item text-white-50">Course 5</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link text-white-50" id="menu">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link text-white-50 dropdown-toggle" data-bs-toggle="dropdown" id="menu">Pages</a>
+                <div class="dropdown-menu bg-dark p-0" id="dropdown-list">
+                  <a href="#" class="dropdown-item text-white-50">page 1</a>
+                  <a href="#" class="dropdown-item text-white-50">page 2</a>
+                  <a href="#" class="dropdown-item text-white-50">page 3</a>
+                  <a href="#" class="dropdown-item text-white-50">page 4</a>
+                  <a href="#" class="dropdown-item text-white-50">page 5</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link text-white-50" id="menu">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div id="nav-icons" class="d-none d-lg-block">
+            <a href="#"><i class="fas fa-search text-white-50" data-bs-toggle="modal" data-bs-target="#search-box"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart ps-3 text-white-50"></i></a>
+            <a href="#" class="dropdown"><i class="fas fa-user ps-3 text-white-50"></i></a>
+          </div>
+        </nav>
+      </div>
+     </div>
+     <div class="modal fade" id="search-box" tabindex="-1" aria-labelledby="search-box-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <input type="search" class="form-control" placeholder="Search for courses" id="search-input">
+            <!-- Close Button -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <!-- Hero Div 1 -->
+    <div class="container-fluid mt-5 pb-4 bg-dark" id="hero-div-1">
+      <div class="container pt-md-5">
+        <div class="row pt-5">
+          <!-- First Column (Text and Input) -->
+          <div class="col-md-6 text-white">
+            <h1>Achieve Excellence in <span class="text-warning">Learning</span><br> Through Personalized 1-ON-1 Online Sessions</h1><br>
+            <p>Unlock endless knowledge and career opportunities with our online education platform. Start your journey today!</p>
+            <div class="input-group my-3 my-md-5">
+              <input type="email" class="form-control rounded-pill rounded-end-0 bg-transparent text-white" placeholder="Enter Your Email Id">
+              <button class="btn rounded-pill rounded-start-0" id="Subscribe-btn">Subscribe Now</button>
+            </div>
+          </div>
+    
+          <!-- Second Column (Text) -->
+          <div class="col-md-6">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="Assets/Images/hero-1.jpg" class="d-block w-100" alt="hero-1">
+                  <div class="carousel-caption">
+                    <div class="bg-warning">
+                      <h5>Smart Learning</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="Assets/Images/hero-2.jpg" class="d-block w-100" alt="hero-2">
+                  <div class="carousel-caption">
+                    <div class="bg-warning">
+                      <h5>Smart Working</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="Assets/Images/hero-3.jpg" class="d-block w-100" alt="hero-3">
+                  <div class="carousel-caption">
+                    <div class="bg-warning">
+                      <h5>Smart Commumication</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-white text-center" id="slogan">MAKE A STEP <span class="text-warning">FORWARD</span><hr></h1>
+      </div>
+    </div>    
+    <!-- End Hero Div 1 -->
+
+    <!-- Info Div -->
+     <div class="container py-3 py-md-5">
+      <h2 class="text-center text-black">Discover Amazing Features</h2>
+      <h5 class="text-center mt-4 text-black-50">Explore endless learning and career opportunities with our online education platform.</h5>
+      <div class="row">
+        <div class="col-md-3 my-md-4 my-2">
+          <ul class="list-group" id="card">
+            <li class="list-group-item border-0">
+              <i class="far fa-thumbs-up p-3" id="card-icon"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-heading">Study & Succeed</a><br>
+              <p class="mt-2" id="card-body">Unlock your potential by staying focused, learning consistently, and embracing challenges. With dedication and the right mindset, success in your studies will lead to endless opportunities for growth and achievement.</p>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-footer">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 my-md-4 my-2">
+          <ul class="list-group" id="card">
+            <li class="list-group-item border-0">
+              <i class="fas fa-medal p-3" id="card-icon"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-heading">Official Certificate</a><br>
+              <p class="mt-2" id="card-body">An official certificate recognizes your hard work and achievements, validating your skills and knowledge. It opens doors to new opportunities, enhancing your credibility and increasing your chances for career advancement.</p>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-footer">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 my-md-4 my-2">
+          <ul class="list-group" id="card">
+            <li class="list-group-item border-0">
+              <i class="fas fa-laptop-code p-3" id="card-icon"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-heading">Personalized Coaching</a><br>
+              <p class="mt-2" id="card-body">Personalized coaching offers tailored guidance and support, focusing on your unique strengths and challenges. It helps you grow at your own pace, boosting confidence and skills to achieve your personal and professional goals.</p>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-footer">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 my-md-4 my-2">
+          <ul class="list-group" id="card">
+            <li class="list-group-item border-0">
+              <i class="far fa-smile p-3" id="card-icon"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-heading">Innovative Mindset</a>
+              <p class="mt-2" id="card-body">An innovative mindset encourages creative problem-solving, allowing you to approach challenges with fresh perspectives. It helps unlock new opportunities, driving personal and professional growth. Build a culture of innovation.</p>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#" id="card-footer">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </div>
+    <!-- End Info Div -->
+
+    <!-- Courses Div -->
+      <div class="container mt-3 mt-md-0">
+        <h2 class="text-center text-black">Discover Over <span class="text-warning">1500+</span> <span class="text-danger">Free Learning Courses</span></h2>
+        <h5 class="text-center mt-4 text-black-50">Discover 1500+ free courses across various subjects, enhance your skills, and unlock new opportunities—all at minimal cost.</h5>
+        <div class="row">
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fas fa-laptop-code"></i></span>
+              <div class="form-control">
+                <h6><a href="#">Art & Design</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fas fa-code"></i></span>
+              <div class="form-control">
+                <h6><a href="#">Web Development</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fas fa-sitemap"></i></span>
+              <div class="form-control">
+                <h6><a href="#">Digital Marketing</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fab fa-node-js"></i></span>
+              <div class="form-control">
+                <h6><a href="#">HTML CSS JS</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fas fa-cubes"></i></span>
+              <div class="form-control">
+                <h6><a href="#">Leadership</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fas fa-microchip"></i></span>
+              <div class="form-control">
+                <h6><a href="#">Data Science</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fab fa-gg-circle"></i></span>
+              <div class="form-control">
+                <h6><a href="#">ChatGTP</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-3">
+            <div class="input-group" id="cource-item">
+              <span class="input-group-text"><i class="fas fa-users-cog"></i></span>
+              <div class="form-control">
+                <h6><a href="#">Deep Learning</a></h6>
+                <p>10+ Courses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mt-md-3 mb-3" id="course-category">
+          <div class="col-md-3 col-6 text-center">
+            <h4>1,548+<p id="tag">Cources</p></h4>            
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <h4>12+<p id="tag">Countries</p></h4>            
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <h4>500K<p id="tag">Students</p></h4>            
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <h4>80+<p id="tag">Instructors</p></h4>            
+          </div>
+        </div>
+      </div>
+    <!-- End Cources Div -->
+
+    <!-- Feedback Div -->
+     <div class="container-fluid bg-dark">
+      <div class="container py-md-5 py-3">
+        <h2 class="text-center text-white">What Students Are <span class="text-danger">Saying ?</span></h2>
+        <h6 class="text-center text-white-50 mt-4">Our students share their inspiring journeys, highlighting how our courses have transformed their skills, boosted confidence, and opened doors to new opportunities in their careers and personal growth.</h6>
+        <div class="row mt-4">
+          <!-- first slide -->
+          <div class="col-md-4 p-4" id="feedback-slider">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second slide -->
+          <div class="col-md-4 p-4" id="feedback-slider">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third slide -->
+          <div class="col-md-4 p-4" id="feedback-slider">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <ul class="list-group">
+                    <li class="list-group-item" id="feedback-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <p>"Online education has made it easy for me to balance work and study. The flexibility to choose my study time perfectly fits into my busy schedule, making learning more convenient and effective!"</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5><i class="fas fa-user-circle"></i> Prince Kumar</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- End Feedback Div -->
+
+    <!-- Contact Div -->
+     <div class="container mb-4" id="contact-div">
+      <h2 class="text-center text-black py-4">Have a <span class="text-warning">question?</span> Contact us <span class="text-danger">today!</span></h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Full Name">
+          </div>
+          <div class="col-md-6 py-3 py-md-0">
+            <input type="email" class="form-control" placeholder="Enter Your Email">
+          </div>
+          <div class="col-12 py-1 py-md-4">
+            <textarea class="form-control pt-3" placeholder="Enter Your Message"></textarea>
+          </div>
+          <div class="col-6 text-center mt-3 mt-md-0">
+            <button class="btn" type="button" id="contact-msg-btn">Submit</button>
+          </div>
+          <div class="col-6 text-center mt-3 mt-md-0">
+            <button class="btn" type="button" id="contact-phone-btn">Contact Us <i class="fas fa-phone"></i></button>
+          </div>
+        </div>
+      </form>
+     </div>
+    <!-- End Contact Div -->
+
+    <!-- Footer Div -->
+     <div class="container-fluid bg-dark">
+      <div class="container bg-dark pt-3 pt-md-5">
+        <div class="row text-white">
+          <div class="col-md-4">
+            <img src="Assets/Images/logo.png" alt="Logo">
+            <p class="pt-3">Unlock a world of knowledge and endless opportunities with our online education platform—pave the way for a new career today!</p>
+            <div class="input-group">
+              <span class="input-group-text text-white bg-dark border-0"><i class="fas fa-map-marker-alt"></i></span>
+              <p class="form-control text-white bg-dark border-0">Gandhi Nagar, Tatisilwai, Ranchi (835103), Jharkhand, India</p>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text text-white bg-dark border-0"><i class="fas fa-phone-alt"></i></span>
+              <p class="form-control text-white bg-dark border-0">+91 2345678901</p>              
+            </div><hr>
+          </div>
+          <div class="col-md-2" id="info-footer">
+            <h5>Usefull Links</h5>
+            <ul>
+              <li><a href="#">Course</a></li>
+              <li><a href="#">Mission & Vision</a></li>
+              <li><a href="#">Join a Career</a></li>
+              <li><a href="#">Zoom Meeting</a></li>
+              <li><a href="#">Pricing Plan</a></li>
+            </ul><hr>
+          </div>
+          <div class="col-md-2" id="about-footer">
+            <h5>Our Institute</h5>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Instructors</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Services</a></li>
+            </ul><hr>
+          </div>
+          <div class="col-md-4">
+            <h5>Get In Touch</h5>
+            <div class="row mt-3 mt-md-4">
+              <div class="col-6">
+                <a href="#"><img src="Assets/Images/app-store.png" alt="App-Store" class="w-100"></a>
+              </div>
+              <div class="col-6">
+                <a href="#"><img src="Assets/Images/google-play.png" alt="App-Store" class="w-100"></a>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="d-flex" id="contact-icons">
+                  <a href="#"><i class="fas fa-globe-asia p-2"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f p-2"></i></a>
+                  <a href="#"><i class="fab fa-instagram p-2"></i></a>
+                  <a href="#"><i class="fab fa-twitter p-2"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in p-2"></i></a>
+                  <a href="#"><i class="fas fa-envelope p-2"></i></a>
+                </div>
+              </div>
+            </div><hr>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col-md-6 text-center text-white-50">
+          <h6>© 2025 Edupath. Design & Develop by Prince.</h6>
+        </div>
+        <div class="col-md-6 mt-3 mt-md-0">
+          <div class="d-flex" id="login-section">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- End Footer Div -->
+     
+    <!-- Bootstrap Script CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

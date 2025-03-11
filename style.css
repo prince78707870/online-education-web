@@ -1,0 +1,103 @@
+*{ box-sizing: border-box;}
+
+/* Default scrollbar for all screens */
+::-webkit-scrollbar {
+    width: 5px; /* Default width */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light gray background */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Dark gray */
+    border-radius: 1px; /* Rounded edges */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* 🎯 Reduce scrollbar width for mobile screens */
+
+/* PLACEHOLDER STYLE */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.579) !important;
+    font-weight: 500;
+}
+
+/* NavBAR  */
+.active{ border-bottom: 2px solid #4CAF50 !important;}
+#menu:hover{ color: white !important;}
+#navbar-menu ul li{ padding-left: 1rem;}
+#nav-icons a{ text-decoration: none;}
+#nav-icons a i:hover{ color: white !important;}
+#dropdown-list a:hover{ color: white !important; background-color: black;}
+#search-input::placeholder{ color: rgba(0, 0, 0, 0.541) !important;}
+
+/* HERO DIV 1 */
+#hero-div-1 h1{ line-height: 1.8; font-weight: 900;}
+#hero-div-1 input,button{ height: 3.5rem; padding-left: 1.8rem;}
+#hero-div-1 .carousel-control-prev-icon, .carousel-control-next-icon{ margin-top: 10rem !important;}
+@media(min-width: 992px){
+    #hero-div-1 .carousel-control-prev-icon, .carousel-control-next-icon{ margin-top: 15rem !important;}
+}
+@media(min-width: 768px) and (max-width: 1104px){
+    #carouselExampleControls{
+        padding-top: 5rem;
+    } 
+}
+#Subscribe-btn{ background-color: purple; color: white; font-weight: 600;}
+#Subscribe-btn:hover{ background-color: #212529 !important; transition: 0.2s all ease-in; border: 2px solid purple; box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7);}
+
+@media(max-width: 768px){
+    #slogan{ font-size: 1.5rem; margin-top: 1rem;}
+}
+
+/* INFO DIv */
+#card-icon{ font-size: 3rem; color: purple; background-color: #cccccc88; border-radius: 1.3rem;}
+#card-heading{ text-decoration: none; font-size: 1.3rem; color: rgba(0, 0, 255, 0.744); font-weight: 600;}
+#card-heading:hover{ color: purple; transition: 0.2s all ease-in;}
+#card-body{ font-weight: 500; color: rgba(0, 0, 0, 0.644);}
+#card-footer{ text-decoration: none; font-size: 1.1rem;}
+#card{ border: 1px solid #ccc;}
+#card:hover{ box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7); transition: all 0.2s ease-in-out;}
+
+/* COURCES */
+#cource-item i{ font-size: 1.7rem; color: purple;}
+#cource-item h6 a{ font-size: 1.2rem; font-weight: 600; color: rgba(0, 0, 0, 0.836); text-decoration: none;}
+#cource-item p{ color: #555;}
+#cource-item:hover{ box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7); transition: all 0.2s ease-in-out;}
+#course-category h4{ font-size: 3rem; padding: 1rem; background-color: purple; color: white; border-radius: 1rem;}
+#course-category h4:hover{ color: red; background-color: white; box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7); transition: all 0.4s ease-in-out;}
+#tag{ font-size: 1.2rem; background-color: purple; color: white;}
+#course-category h4:hover #tag{ background-color: white; color: purple; transition: all 0.4s ease-in-out;}
+
+/* FEEDBACK */
+#feedback-rating i{ color: gold;}
+#feedback-slider li{ border: none;}
+#feedback-slider:hover{ box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7); transition: all 0.4s ease-in-out;}
+
+/* CONTACT */
+#contact-div input,textarea{ border: 2px solid #ccc !important; height: 4rem;}
+#contact-div input::placeholder, 
+#contact-div textarea::placeholder{ color: purple !important; opacity: 0.7;}
+#contact-msg-btn,#contact-phone-btn{ border: 2px solid purple !important; font-size: 1.5rem; width: 100%; background-color: purple; color: white; font-weight: 600;}
+#contact-msg-btn:hover{ background-color: white; color: purple; transition: all 0.4s ease-in-out; box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7);}
+#contact-phone-btn:hover{ background-color: white; color: purple; transition: all 0.4s ease-in-out; box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.7);}
+@media(max-width: 768px){
+    #contact-msg-btn{ font-size: 1rem;}
+    #contact-phone-btn{ font-size: 1rem;}
+}
+
+/* FOOTER */
+#info-footer a,#about-footer a{ text-decoration: none; color: #ccccccb7 !important}
+#info-footer li,#about-footer li{ padding: 3px;}
+#info-footer a:hover{ color: white !important;}
+#about-footer a:hover{ color: white !important;}
+#contact-icons a{ text-decoration: none; color: #ccccccb7 !important;}
+#contact-icons a:hover{ color: white !important;}
+#login-section a{ text-decoration: none; font-size: 1.1rem; color: #ccccccb7; margin: -.5rem 1rem 0 1rem;}
+#login-section a:hover{ color: white;}
